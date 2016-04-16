@@ -125,8 +125,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sqLiteDatabase=db.getWritableDatabase();
         Cursor cursor = sqLiteDatabase.query("user", null, null, null, null, null, null);//查询的表名,返回哪几列数据,查询的条件(如name=\"小张\"),查询条件的参数()
         int size=cursor.getCount();
-        cursor.moveToPosition(size-1-position);
-        Log.i("AAA","size="+size+"position="+position);
+        cursor.moveToPosition(size-position);
+        Log.i("AAA","size="+size+"position="+position+"行标为 "+(size-position));
         int i=cursor.getInt(cursor.getColumnIndex("_id"));
         System.out.println(i);
         sqLiteDatabase.delete("user","_id=?",new String[]{i+""});
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         contentValues.put("name",content);
         Cursor cursor = sqLiteDatabase.query("user", null, null, null, null, null, null);//查询的表名,返回哪几列数据,查询的条件(如name=\"小张\"),查询条件的参数()
         int size=cursor.getCount();
-        cursor.moveToPosition(size-1-position);  //使用cursor方法是定位要修改的行
+        cursor.moveToPosition(size-position);  //使用cursor方法是定位要修改的行
         int i=cursor.getInt(cursor.getColumnIndex("_id"));
         sqLiteDatabase.update("user",contentValues,"_id=?",new String[]{i+""});
     }
@@ -149,7 +149,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
 
-        String content=listData.get(position);
+        System.out.println(position);
+        String content=listData.get(position-1);
         //设置弹出框
         LayoutInflater layoutInflater= LayoutInflater.from(MainActivity.this);
         View view1=layoutInflater.inflate(R.layout.edit,null);
