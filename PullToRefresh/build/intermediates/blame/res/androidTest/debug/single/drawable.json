@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\AndroidStudioProjects\\LikeHUEL\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "F:\\AndroidStudioProjects\\LikeHUEL\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "F:\\Demo\\ToRefresh\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "F:\\Demo\\ToRefresh\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\LikeHUEL\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "F:\\AndroidStudioProjects\\LikeHUEL\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "F:\\Demo\\ToRefresh\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "F:\\Demo\\ToRefresh\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    }
+]
